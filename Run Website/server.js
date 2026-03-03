@@ -4,7 +4,7 @@ import cors from "cors";
 import mongoose from "mongoose";
 import bcrypt from "bcrypt";
 import jwt from "jsonwebtoken";
-
+ 
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -221,3 +221,4 @@ app.get("/today-water", authenticateToken, async (req, res) => {
 app.listen(4000, () =>
   console.log("✅ FitQuest backend with auth running at http://localhost:4000")
 );
+
